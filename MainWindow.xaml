@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfAppDOGA_2023_09_20.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppDOGA_2023_09_20"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="btnHarmadikFeladat" Content="Harmadik Feladat" Grid.Column="0" Width="100" Height="50" Click="btnHarmadikFeladat_Click"/>
+        <TextBox x:Name="txtNegyedikFeladat" Grid.Column="1" Width="100" Height="50" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button x:Name="btnNegyedikFeladat" Content="Negyedik Feladat" Grid.Column="1" Width="100" Height="50" HorizontalAlignment="Right" Click="btnNegyedikFeladat_Click"/>
+        <Button x:Name="btnHatodikFeladat" Content="HatodikFeladat" Grid.Column="2" Width="100" Height="50" Click="btnHatodikFeladat_Click"/>
+        <Button x:Name="btnNyolcadikFeladat" Content="NyolcadikFeladat" Grid.Column="3" Width="100" Height="50" Click="btnNyolcadikFeladat_Click"/>
+
+        <Label Content="Fizetési módok -------" Grid.Row="1" Grid.Column="0" HorizontalAlignment="right"/>
+        <ListBox x:Name="lbOtodikFeladat" Grid.Row="1" Grid.Column="1"/>
+        <Label Content =" ------- Leghosszabb fuvar" Grid.Row="1" Grid.Column="3" HorizontalAlignment="left"/>
+        <ListBox x:Name="lbHetedikFeladat" Grid.Row="1" Grid.Column="2"/>
+
+    </Grid>
+</Window>
